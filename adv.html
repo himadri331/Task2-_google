@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Search</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        .container{
+            display:flex;
+            flex-direction:column;
+            /* border:2px solid black; */
+            /* justify-content: space-between; */
+            height: 753px;
+            /* align-items: stretch; */
+
+        }
+        .items{
+            border:1px solid rgb(214, 212, 212);
+            /* flex-basis: 100%; */
+
+        }
+        #navbar1{
+            display: flex;
+            background-color:  rgb(243, 244, 247);
+            justify-content: space-between;
+            /* justify-content: center; */
+            
+        }
+        #home{
+            text-decoration: none;
+            color: black;
+            margin:22px;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        #Google_icon{
+            width: 100px;
+            height: 60px;
+            margin: 8px;
+            background-color: rgb(243, 244, 247); ;
+        }
+        #navbar2{
+            color:rgb(196, 19, 19);
+            font-size: 20px;
+            /* margin:8px; */
+            padding: 22px 32px;
+            font-weight: 800px;
+            
+            
+        }
+        #main{
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            height:500px; 
+        }
+        #footer1{
+            background-color:  rgb(243, 244, 247);
+          
+            padding: 8px 32px;
+            color: rgb(116, 116, 116);
+            /* margin:20px 0px 2px 0px ; */
+            height: 20px;
+            align-items: center;
+
+        
+        }
+        #footer2{
+              display:flex;
+              background-color:  rgb(243, 244, 247);
+              align-items: center;
+               height: 60px;
+
+        }
+        .extra{
+            text-decoration: none;
+            margin:2px;
+            padding: 3px 32px;
+            color: rgb(116, 116, 116);
+
+        }
+        .forms{
+            display:flex;
+            width:400px;
+            margin:38px 18px;
+            justify-content: space-between;
+            /* justify-content: center; */
+            align-items: flex-start;
+
+
+        }
+        #buttons{
+            margin: 0px 0px 0px 267px;
+            padding:8px;
+            width:140px;
+            background-color: rgb(51, 141, 201);
+            border: none;
+            color: white;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+        #start{
+            margin:18px 18px 0 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="navbar1" class="items">
+          
+            <img src="Images for task/download-removebg-preview.png" alt="google" id="Google_icon">
+            <a id="home" href="./index.html">Home</a>
+        </div>
+        <div id="navbar2" class="items">
+            Advanced Search 
+        </div>
+        <div id="main" class="items">
+           <div id="start">Find pages with..</div> 
+           <form action="https://google.com/search">
+           
+            <div class="forms">
+               <label for="atw"> all these words:</label>
+              
+                   <input type="text" id="atw" name="as_q">
+               </div>
+               <div class="forms">
+               <label for="tew">this exact word or phrase: </label>
+                  
+                       <input type="text" id="tew" name="as_epq">
+                   </div>
+                   <div class="forms">
+                 <label for="aotw">any of these words:</label>
+                 
+                     <input type="text" id="aotw" name="as_oq">
+                 </div> 
+                 <div class="forms">
+              <label for="notw">none of these words:</label>
+              
+                  <input type="text" id="notw" name="as_eq">
+              </div>
+              <div class="forms">
+                <input type="submit" id="buttons" value="Advanced Search">
+              </div>
+           </form>
+        </div>
+        <div id="footer1" class="items">
+           India
+        </div>
+        <div id="footer2" class="items">
+            <!-- <div class="left">
+                <a class="extra" href="#" target="_blank">About</a>
+                <a class="extra" href="#" target="_blank"> Adverstising</a>
+                <a class="extra" href="#" target="_blank">Buisness</a>
+
+                <a class="extra" href="#" target="_blank">How Search works</a>
+
+            </div> -->
+            <!-- <div class="right"> -->
+                <a class="extra" href="#" target="_blank">Privacy</a>
+                <a class="extra" href="#" target="_blank">Terms</a>
+                <a class="extra" href="#" target="_blank">Settings</a>
+            <!-- </div> -->
+        </div>
+    </div>
+</body>
+</html>
